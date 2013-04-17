@@ -46,4 +46,5 @@ plugins=(git)
 
 source $ZSH/oh-my-zsh.sh
 
-# Customize to your needs...
+# OpenFOAM
+. /opt/openfoam220/etc/bashrc
