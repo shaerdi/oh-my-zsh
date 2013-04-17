@@ -1,7 +1,7 @@
-PROMPT='%c '
-RPROMPT='$(git_prompt_info)  %{$reset_color%}'
+PROMPT='%% '
+RPROMPT='%~$(git_prompt_info)%{$reset_color%}'
 
-ZSH_THEME_GIT_PROMPT_PREFIX="%{$reset_color%}[git:"
+ZSH_THEME_GIT_PROMPT_PREFIX="%{$reset_color%}/[git:"
 ZSH_THEME_GIT_PROMPT_SUFFIX=""
 ZSH_THEME_GIT_PROMPT_DIRTY="]%{$fg[red]%}⚡%{$reset_color%}"
 ZSH_THEME_GIT_PROMPT_CLEAN="]"
