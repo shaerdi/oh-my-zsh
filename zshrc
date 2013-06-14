@@ -13,18 +13,17 @@ ZSH_THEME="shaerdi"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 # Alias definitions.
-# You may want to put all your additions into a separate file like
-# ~/.bash_aliases, instead of adding them here directly.
-# See /usr/share/doc/bash-doc/examples in the bash-doc package.
 if [ -f ~/.bash_aliases ]; then
     . ~/.bash_aliases
 fi
+
+EDITOR=gvim
 
 # Set to this to use case-sensitive completion
 # CASE_SENSITIVE="true"
 
 # Comment this out to disable bi-weekly auto-update checks
-# DISABLE_AUTO_UPDATE="true"
+DISABLE_AUTO_UPDATE="true"
 
 # Uncomment to change how many often would you like to wait before auto-updates occur? (in days)
 # export UPDATE_ZSH_DAYS=13
@@ -48,3 +47,9 @@ source $ZSH/oh-my-zsh.sh
 
 # OpenFOAM
 . /opt/openfoam220/etc/bashrc
+
+# liggghts
+CFDEM_lppPath=/home/simon/liggghts/lpp
+
+alias lpp="python $CFDEM_lppPath/src/lpp.py"
+alias pizza="python $CFDEM_lppPath/src/pizza.py"
