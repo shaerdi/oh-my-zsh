@@ -53,3 +53,5 @@ CFDEM_lppPath=/home/simon/liggghts/lpp
 
 alias lpp="python $CFDEM_lppPath/src/lpp.py"
 alias pizza="python $CFDEM_lppPath/src/pizza.py"
+
+export PATH="${PATH}:/home/simon/scripts"
