@@ -1,9 +1,7 @@
 alias ..="cd .."
 alias ...="cd ../.."
 alias log="tail -f log*"
-alias yade="~/yade/build/bin/yade-2013-04-23.git-e9dbeff"
 alias gvim="gvim &> /dev/null"
-alias zotero="/home/simon/Documents/Literatur/ZoteroProgram/run-zotero.sh"
 
 
 # gdir, cdir and sdir functions
@@ -55,5 +53,3 @@ function runall {
       cd ..;
   done
 }
-
-alias plotAvValue="python ~/scripts/plotOFaverageValue.py"

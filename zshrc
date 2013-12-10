@@ -6,11 +6,6 @@ ZSH=$HOME/.oh-my-zsh
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
 ZSH_THEME="shaerdi"
-#ZSH_THEME="robbyrussell"
-
-# Example aliases
-# alias zshconfig="mate ~/.zshrc"
-# alias ohmyzsh="mate ~/.oh-my-zsh"
 
 # Alias definitions.
 if [ -f ~/.bash_aliases ]; then
@@ -23,7 +18,7 @@ EDITOR=gvim
 # CASE_SENSITIVE="true"
 
 # Comment this out to disable bi-weekly auto-update checks
-DISABLE_AUTO_UPDATE="true"
+#DISABLE_AUTO_UPDATE="true"
 
 # Uncomment to change how many often would you like to wait before auto-updates occur? (in days)
 # export UPDATE_ZSH_DAYS=13
@@ -45,13 +40,10 @@ plugins=(git)
 
 source $ZSH/oh-my-zsh.sh
 
-# OpenFOAM
-. /opt/openfoam220/etc/bashrc
-
-# liggghts
-CFDEM_lppPath=/home/simon/liggghts/lpp
-
-alias lpp="python $CFDEM_lppPath/src/lpp.py"
-alias pizza="python $CFDEM_lppPath/src/pizza.py"
-
 export PATH="${PATH}:/home/simon/scripts"
+
+export PYTHONPATH="${PYTHONPATH}:/home/simon/python"
+
+if [ -f ~/.bash_local ]; then
+    . ~/.bash_local
+fi
