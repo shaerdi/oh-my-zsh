@@ -1,7 +1,6 @@
 alias ..="cd .."
 alias ...="cd ../.."
 alias log="tail -f log*"
-alias gvim="gvim &> /dev/null"
 
 
 # gdir, cdir and sdir functions
@@ -52,4 +51,8 @@ function runall {
       $@;
       cd ..;
   done
+}
+
+function listofcases {
+  find -type d | xargs pyFoamListCases.py --parallel-info $@ | sed '/No cases found/d'
 }
