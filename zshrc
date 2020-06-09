@@ -48,7 +48,6 @@ if [ -f ~/.bash_local ]; then
     . ~/.bash_local
 fi
 
-export KEYTIMEOUT=1
 bindkey "^?" backward-delete-char
 
 autoload -U up-line-or-beginning-search
